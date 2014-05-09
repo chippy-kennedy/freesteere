@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require scripts
+//= require jquery.color.plus-names-2.1.2
+//= require bootstrap
