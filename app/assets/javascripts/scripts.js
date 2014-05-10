@@ -1,16 +1,22 @@
 
 
-
-
 $(document).ready(function()
   {
-
 
   /*Mouse Hover Over*/
   $("#free").mouseenter(function(){
   	
     $("#free").fadeOut(300,function(){
   		$(this).text("FREE BEER!!").fadeIn(0);
+
+  
+    /*TODO:Make Bold on Hover Over:*/
+    /*$(this).animate({
+      width:50%;
+      height:50%;
+
+    });*/
+    
 	
 	var i = 0;
   	do{
@@ -25,9 +31,17 @@ $(document).ready(function()
     	while(i<25)
   	
   	});
-  });
 
-  /*Mouse Stop Hover Over*/
+    
+
+  });
+  
+  
+    
+  
+
+
+  /*Mouse Not Hover Over*/
   $("#free").mouseleave(function(){
    	/* $("#body").animate({backgroundColor:"white"}, 4000, swing, complete);*/
   	
@@ -40,12 +54,6 @@ $(document).ready(function()
   });
 
 
-
-
-
-  $("#btn2").click(function(){
-    $("#box").animate({height:"100px"});
-  });
 
 });
 
