@@ -1,5 +1,4 @@
 
-
 $(document).ready(function()
   {
 
@@ -17,24 +16,21 @@ $(document).ready(function()
 
     });*/
     
-	
-	var i = 0;
-  	do{
-    $("#body")	.animate({backgroundColor:"blue"}, 300)
-    				.animate({backgroundColor:"red"}, 300)
-    				.animate({backgroundColor:"purple"}, 300)
-    				.animate({backgroundColor:"green"}, 300)
-    				.animate({backgroundColor:"yellow"}, 300)
-    				.animate({backgroundColor:"orange"}, 300);
-    				i++;
-    	}
-    	while(i<25)
-  	
   	});
 
-    
+    var i = 0;
+    do{
+    $("#body")  .animate({backgroundColor:"blue"}, 300)
+            .animate({backgroundColor:"red"}, 300)
+            .animate({backgroundColor:"purple"}, 300)
+            .animate({backgroundColor:"green"}, 300)
+            .animate({backgroundColor:"yellow"}, 300)
+            .animate({backgroundColor:"orange"}, 300);
+            i++;
+      }
+      while(i<25)
 
-  });
+  });/*End: Mouse Hover Over*/
 
 
   /*Mouse Not Hover Over*/
@@ -49,7 +45,6 @@ $(document).ready(function()
   	});
   });
 
-
   /*Stop animation if mouse leaves page*/
   $("#body").mouseleave(function() {
     $("#body").stop(true, false).fadeIn();
@@ -58,14 +53,8 @@ $(document).ready(function()
     $("#free").fadeOut(300,function(){
       $(this).text("free steere").fadeIn(300);
     });;
-  });
+  });/*End: Mouse Not Hover Over*/
 
 
 });
 
-
-
-
-	
-				
-			

@@ -10,9 +10,27 @@
 <div id="footer">
     <div class="container">
      <p class="muted credit">HarKenSol<br>
-     	<i class="fa fa-refresh"></i><br>
-     	<i class="fa fa-beer"></i><br>
-     	<i class="fa fa-rocket"></i>
+		
+
+		<a href="javascript:history.go(0)">
+			<i class="fa fa-refresh"></i>
+		</a>
+     	
+     	&nbsp;&nbsp;
+
+		<%= link_to "http://harkensol.com", :target => "_blank" do%>
+            <i class="fa fa-rocket"></i>
+        <% end %>
+		
+		&nbsp;&nbsp;
+
+		<%= link_to "http://harkensol.com" do%>
+            <i class="fa fa-beer"></i><br>
+        <% end %>
+		
+
+     	
+
      </p>
     </div>
 </div>
