@@ -35,10 +35,6 @@ $(document).ready(function()
     
 
   });
-  
-  
-    
-  
 
 
   /*Mouse Not Hover Over*/
@@ -54,8 +50,21 @@ $(document).ready(function()
   });
 
 
+  /*Stop animation if mouse leaves page*/
+  $("#body").mouseleave(function() {
+    $("#body").stop(true, false).fadeIn();
+    $("#body").animate({backgroundColor:"white"},300);
+
+    $("#free").fadeOut(300,function(){
+      $(this).text("free steere").fadeIn(300);
+    });;
+  });
+
 
 });
+
+
+
 
 	
 				
