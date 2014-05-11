@@ -28,6 +28,14 @@ h5{
 	
 }
 
+h1{
+	text-align:center;
+	font-size:400%;
+	font-weight:bold;
+	display: block;
+
+}
+
 .wrapper {
 	margin-top:200px;
 }
@@ -36,7 +44,6 @@ h5{
 	margin:0;
   	padding:0;
 	width:100%;
-
 }
 
 #footer{
@@ -58,5 +65,19 @@ a:active{
 }
 a:hover{
 	text-decoration:none;
-	color:#333333;
+	color:#0099FF;
+}
+
+#drinking{
+	text-align:center;
+	margin-top:90px;
+}
+
+#drinking-pod{
+	margin:0px 40px;
+	height:160px;
+	background-color:#E6F5FF;
+
+	/*background-color:#0099FF;*/
+	border-radius:25px;
 }

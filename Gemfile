@@ -52,6 +52,9 @@ gem 'therubyracer', :group => :assets
 #for deployment
 gem 'rails_12factor'
 
+#database cleaner
+gem 'database_cleaner', '< 1.1.0'
+
 
 
 # Use ActiveModel has_secure_password
