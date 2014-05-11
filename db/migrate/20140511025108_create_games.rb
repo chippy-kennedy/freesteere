@@ -3,7 +3,6 @@ class CreateGames < ActiveRecord::Migration
     create_table :games do |t|
       t.string :name
       t.string :description
-      t.string[] :rules
       t.string :icon
 
       t.timestamps
