@@ -71,7 +71,14 @@ a:hover{
 #drinking{
 	text-align:center;
 	margin-top:90px;
+
+	.col-md-3{
+		height:180px;
+		text-align:center;
+	}
+
 }
+
 
 #drinking-pod{
 	margin:0px 40px;
@@ -80,4 +87,34 @@ a:hover{
 
 	/*background-color:#0099FF;*/
 	border-radius:25px;
+}
+
+h3{
+	font-size:160%;
+	color:#0099FF;
+	font-weight:bold;
+}
+
+i{
+	color:#0099FF;
+}
+
+#drinking-pod:hover{
+	background-color:#0099FF;
+	i{
+		color:#E6F5FF;
+	}
+	h3{
+		color:#E6F5FF;
+	}
+}
+
+p{
+	text-align:center;
+	font-size: 130%;
+}
+
+#back{
+	text-align:left;
+	margin-top:21%;
 }
