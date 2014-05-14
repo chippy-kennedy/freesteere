@@ -55,6 +55,44 @@ $(document).ready(function()
     });;
   });/*End: Mouse Not Hover Over*/
 
-
 });
 
+/*Function to Generate Random Song*/
+
+
+
+function newSong() {
+
+  var unPickedSongs = new Array();
+
+  unPickedSongs[0]="The Way We Move";
+  unPickedSongs[1]="Going Out in Style - Dropkick...";/**/
+  unPickedSongs[2]="It's So Hot - 4th Pyramid";/**/
+  unPickedSongs[3]="Come Together - Spaceman";/**/
+  unPickedSongs[4]="The Boom - T. Mills";/**/
+  unPickedSongs[5]="Man Up - The Blue Van";/**/
+  unPickedSongs[6]="Almost Famous - Big Freedia";/**/
+  unPickedSongs[7]="Control - Benny Benassi";/**/
+  unPickedSongs[8]="Ready Set Go - Ben Gidsjoy";/**/
+  unPickedSongs[9]="College Night - Iman Shumpert";/**/
+  unPickedSongs[10]="Young Blood - The Naked...";
+  unPickedSongs[11]="Howl - The Gaslight Anthem";
+
+  /*FIXME: Make Shuffle not pick already-picked songs"*/
+
+  /*bucket array*/
+  var songChoices = new Array();
+  for(var i=0;i<unPickedSongs.length;i++){
+    songChoices[i]=0;
+  }
+
+  var choice = Math.floor(Math.random()*(unPickedSongs.length));
+  while (songChoices[choice]!=0){
+    choice = Math.floor(Math.random()*(unPickedSongs.length));
+  }
+  
+
+  document.getElementById("songChoice").innerHTML = unPickedSongs[choice];
+  songChoices[choice]++; 
+    /*document.getElementById("songChoice").reset();*/
+}
