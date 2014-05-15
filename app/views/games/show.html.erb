@@ -45,8 +45,11 @@
 	<!--TODO: Add 'Add Rule Page'-->
 			<div style="text-align:center;">
 				
-				<button style=""><h3>Add Rule:</h3></button>
-				<%= button_to "Add Rule", addRule_path(), class:"", style:""%>
+
+					<button style=""><h3>Add Rule:</h3></button>
+				
+
+				<%= button_to "Add Rule", addRule_path(game), class:"", style:"", :method => :get %>
 			</div>
 	</div>
 	

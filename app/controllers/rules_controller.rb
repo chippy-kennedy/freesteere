@@ -1,6 +1,12 @@
 class RulesController < ApplicationController
   before_action :set_rule, only: [:show, :edit, :update, :destroy]
 
+
+  def addRule
+    @rule = Rule.new
+    render "rules/addRule"
+  end
+
   # GET /rules
   # GET /rules.json
   def index
